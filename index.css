@@ -1,6 +1,15 @@
 html {
     background-color: #000000; 
   }
+  button {
+    display: inline-block;
+    height: 200px;
+    padding: 2px;
+    margin: 2px;
+    vertical-align: top;
+    width: 400px;
+ }
+
 
   h1 {
     color:  rgb(255, 255, 255);
