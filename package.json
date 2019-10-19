@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@magenta/music": "^1.11.3",
+    "p5": "^0.10.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "tensorflow": "^0.7.0",
+    "tone": "^13.8.25"
   },
   "scripts": {
     "start": "react-scripts start",
