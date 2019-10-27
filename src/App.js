@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { NonNeg } from '@tensorflow/tfjs-layers/dist/constraints';
 const mv = require('@magenta/music/node/music_vae');
 
 
@@ -75,6 +76,9 @@ var melodiesModelCheckPoint = './data/mel_small';
 
 //Uses promises to chain together asynchronous operations.
 //Check out https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises for info on promises
+
+console.log("im here\n");
+console.log("yummy yummy yummy fruit salad vs elmo vs barney vs shahahahahahah")
 new mv.MusicVAE(melodiesModelCheckPoint)
     .initialize()
     .then(function(musicVAE) {
@@ -84,7 +88,7 @@ new mv.MusicVAE(melodiesModelCheckPoint)
             displayMelodies(noteSequence.notes, index);
         });
     });
-
+console.log("console.log")
 // takes the given array of notes and index. updates the output <spans>
 function displayMelodies(notes, index) {
     var output = 'Melody ' + index + ' <br>';
