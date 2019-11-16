@@ -10,6 +10,7 @@
     "express": "^4.17.1",
     "p5": "^0.10.2",
     "react": "^16.10.2",
+    "react-chat-window": "^1.2.1",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
     "tensorflow": "^0.7.0",

@@ -4,7 +4,12 @@ const cors = require('cors');
 const app = express();
 const port = 8000;
 
+// temporary to hold our messages, need a db
+var messages = []
+
 app.use(cors());
+app.use(express.json())
+
 
 app.use(bodyParser.json());
 
@@ -29,6 +34,14 @@ app.get("/cartername", (request, response)=> {
     response.json({username: "carter"})
 });
 
+app.post("/submit_message", (req, res) => {
+    console.log(req.body);
+    messages.push(req.body.data.text);
+})
+
+app.get("/messages", (req, res) => {
+    res.json({list_of_messages: messages})
+})
 
 
 app.listen(port, () => {
