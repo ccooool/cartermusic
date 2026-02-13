@@ -5,14 +5,14 @@
   "dependencies": {
     "@magenta/music": "^1.11.3",
     "axios": "^0.19.0",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.4",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.22.1",
     "p5": "^0.10.2",
     "react": "^16.10.2",
     "react-chat-window": "^1.2.1",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "5.0.1",
     "tensorflow": "^0.7.0",
     "tone": "^13.8.2./server/5"
   },
